@@ -1,0 +1,12 @@
+@import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
+
+body {
+  background-color: #1d3557;
+}
+.container > div {
+  margin-bottom: 10px;
+}
+
+.center-input {
+  text-align: center;
+}

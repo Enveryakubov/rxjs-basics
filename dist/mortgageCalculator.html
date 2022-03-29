@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mortgage Calculator</title>
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="m-5 text-white">Mortgage Calculator</h1>
+        <div class="d-flex justify-content-between form-control">
+            <p class="fs-4">Mortage Amount ($)</p>
+            <input class="center-input" type="number" id="amount">
+        </div>
+        <div class="d-flex justify-content-between form-control">
+            <p class="fs-4">Interest Rate (%)</p>
+            <input class="center-input" type="number" id="rate">
+        </div>
+        <div class="d-flex justify-content-between form-control align-items-center">
+            <p class="fs-4">Mortgage Length</p>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="term1" name="term" value="180" class="custom-control-input length">
+                <label class="custom-control-label" for="term1">15 yr</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="term2" name="term" value="360" class="custom-control-input length">
+                <label class="custom-control-label" for="term2">30 yr</label>
+            </div>
+        </div>
+        <p class="mt-5 text-white">Your expected monthly payment is $<span id="result">0</span></p>
+    </div>
+    <script src="mortgage.js"></script>
+</body>
+</html>
